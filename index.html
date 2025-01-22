@@ -10,11 +10,134 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <h1 id="title">Public Library Survey Form</h1>
-      <p id="description">Let us know how we can improve your local library.</p>
-    </header>
+    <div class="bg-image"></div>
+    <div class="card">
+      <!-- HEADER -->
+      <header>
+        <h1 id="title">Public Library Survey Form</h1>
+        <p id="description" class="description">Let us know how we can improve your local library.</p>
+      </header>
+      <main>
+        <!-- FORM -->
+        <form id="survey-form" novalidate>
+          <!-- NAME INPUT -->
+          <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" placeholder="First and last name" id="name" required>
+          </div>
+          <!-- EMAIL INPUT -->
+          <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" placeholder="Please enter a valid email address" id="email" required>
+          </div>
+          <!-- GENDER INPUT -->
+          <div class="form-group">
+            <label for="dropdown">Gender:</label>
+            <div class="select-wrapper">
+              <select name="gender" id="dropdown" required>
+                <option value="placeholder" disabled selected>Please select your gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="nonbinary">Nonbinary</option>
+                <option value="other">Other</option>
+                <option value="unknown">Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+          <!-- VISITS INPUT -->
+          <div class="form-group">
+            <label for="number" id="number-label">On average, how often do you use your public library a month?</label>
+            <input type="number" min="0" max="100" placeholder="Please enter a valid number" inputmode="numeric" id="number" required>
+          </div>
+          <!-- MATERIALS INPUT -->
+          <div class="form-group">
+            <fieldset>
+              <legend>What types of library materials do you prefer to check out? Check all that apply.</legend>
+              <!-- Audio Books checkbox -->
+              <label class="check-label" for="audio-books-checkbox">Audio Books
+                <input type="checkbox" name="category" value="audio" tabindex="-1" id="audio-books-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="audio-books-checkbox"></span>
+              </label>
+              <!-- Biography checkbox -->
+              <label class="check-label" for="biography-checkbox">Biography
+                <input type="checkbox" name="category" value="bio" tabindex="-1" id="biography-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="biography-checkbox"></span>
+              </label>
+              <!-- Children's checkbox -->
+              <label class="check-label" for="childrens-checkbox">Children's
+                <input type="checkbox" name="category" value="childrens" tabindex="-1" id="childrens-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="childrens-checkbox"></span>
+              </label>
+              <!-- DVDs checkbox -->
+              <label class="check-label" for="dvds-checkbox">DVDs
+                <input type="checkbox" name="category" value="dvds" tabindex="-1" id="dvds-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="dvds-checkbox"></span>
+              </label>
+              <!-- Fiction checkbox -->
+              <label class="check-label" for="fiction-checkbox">Fiction
+                <input type="checkbox" name="category" value="fiction" tabindex="-1" id="fiction-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="fiction-checkbox"></span>
+              </label>
+              <!-- Large Print checkbox -->
+              <label class="check-label" for="large-print-checkbox">Large Print
+                <input type="checkbox" name="category" value="large-print" tabindex="-1" id="large-print-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="large-print-checkbox"></span>
+              </label>
+              <!-- Nonfiction checkbox -->
+              <label class="check-label" for="nonfiction-checkbox">Nonfiction
+                <input type="checkbox" name="category" value="nonfiction" tabindex="-1" id="nonfiction-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="nonfiction-checkbox"></span>
+              </label>
+              <!-- Young Adult checkbox -->
+              <label class="check-label" for="young-adult-checkbox">Young Adult
+                <input type="checkbox" name="category" value="young-adult" tabindex="-1" id="young-adult-checkbox">
+                <span class="checkmark checkbox" tabindex="0" data-input-id="young-adult-checkbox"></span>
+              </label>
+            </fieldset>
+          </div>
+          <!-- RATING INPUT -->
+           <div class="form-group">
+            <fieldset>
+              <legend>How would you rate your overall experience using your public library over the past year?</legend>
+              <!-- Excellent radio button -->
+              <label class="radio-label" for="excellent-radio">Excellent
+                <input type="radio" name="rating" value="5" tabindex="-1" id="excellent-radio" checked>
+                <span class="checkmark radio" tabindex="0" data-input-id="excellent-radio"></span>
+              </label>
+              <!-- Very Good radio button -->
+              <label class="radio-label" for="very-good-radio">Very Good
+                <input type="radio" name="rating" value="4" tabindex="-1" id="very-good-radio">
+                <span class="checkmark radio" tabindex="0" data-input-id="very-good-radio"></span>
+              </label>
+              <!-- Good radio button -->
+              <label class="radio-label" for="good-radio">Good
+                <input type="radio" name="rating" value="3" tabindex="-1" id="good-radio">
+                <span class="checkmark radio" tabindex="0" data-input-id="good-radio"></span>
+              </label>
+              <!-- Okay radio button -->
+              <label class="radio-label" for="okay-radio">Okay
+                <input type="radio" name="rating" value="2" tabindex="-1" id="okay-radio">
+                <span class="checkmark radio" tabindex="0" data-input-id="okay-radio"></span>
+              </label>
+              <!-- Poor radio button -->
+              <label class="radio-label" for="poor-radio">Poor
+                <input type="radio" name="rating" value="1" tabindex="-1" id="poor-radio">
+                <span class="checkmark radio" tabindex="0" data-input-id="poor-radio"></span>
+              </label>
+            </fieldset>
+           </div>
+           <!-- COMMENTS INPUT -->
+           <div class="form-group">
+            <label for="comments">Additional Comments:</label>
+            <textarea rows="12" id="comments"></textarea>
+           </div>
+           <!-- SUBMIT BUTTON -->
+            <div class="button-group">
+              <button type="submit" class="button" id="submit">Submit</button>
+            </div>
+        </form>
+      </main>
+    </div>
     <!-- FOOTER -->
     <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a></footer>
   </body>
