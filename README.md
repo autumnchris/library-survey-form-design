@@ -12,3 +12,7 @@ Inspired by the [Survey Form](https://www.freecodecamp.org/learn/2022/responsive
 * [Normalize.css](http://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
+
+## Demo
+
+View project demo at [https://autumnchris.github.io/library-survey-form-design](https://autumnchris.github.io/library-survey-form-design).
