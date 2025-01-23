@@ -1,0 +1,96 @@
+/* BASE PAGE STYLES */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent;
+  font-family: Lato, sans-serif;
+  height: 100%;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+body {
+  background: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 20%);
+  min-height: 100%;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  padding: 50px 20px 6.8rem;
+  position: relative;
+}
+
+header {
+  padding-top: 30px;
+  text-align: center;
+}
+
+main {
+  padding-top: 40px;
+}
+
+footer {
+  background: hsl(0, 0%, 100%);
+  bottom: 0;
+  font-size: 0.8rem;
+  left: 0;
+  letter-spacing: 2px;
+  padding: 14px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  font-family: "PT Serif", sans-serif;
+  letter-spacing: 3px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #004988;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
