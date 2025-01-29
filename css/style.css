@@ -65,11 +65,10 @@ a:hover,
 a:active,
 a:focus {
   color: #004988;
-  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus,
