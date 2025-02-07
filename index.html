@@ -25,18 +25,18 @@
           <!-- NAME INPUT -->
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="First and last name" id="name" required>
+            <input type="text" name="name" placeholder="First and last name" id="name" autocomplete="name" required>
           </div>
           <!-- EMAIL INPUT -->
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Please enter a valid email address" id="email" required>
+            <input type="email" name="email" placeholder="Please enter a valid email address" id="email" autocomplete="email" required>
           </div>
           <!-- GENDER INPUT -->
           <div class="form-group">
             <label for="dropdown">Gender:</label>
             <div class="select-wrapper">
-              <select name="gender" id="dropdown" required>
+              <select name="gender" id="dropdown" autocomplete="off" required>
                 <option value="placeholder" disabled selected>Please select your gender</option>
                 <option value="female">Female</option>
                 <option value="male">Male</option>
@@ -49,7 +49,7 @@
           <!-- VISITS INPUT -->
           <div class="form-group">
             <label for="number">On average, how often do you use your public library a month?</label>
-            <input type="number" min="0" max="100" placeholder="Please enter a valid number" inputmode="numeric" id="number" required>
+            <input type="number" min="0" max="100" placeholder="Please enter a valid number" inputmode="numeric" id="number" autocomplete="off" required>
           </div>
           <!-- MATERIALS INPUT -->
           <div class="form-group">
@@ -57,42 +57,42 @@
               <legend>What types of library materials do you prefer to check out? Check all that apply.</legend>
               <!-- Audio Books checkbox -->
               <label class="check-label" for="audio-books-checkbox">Audio Books
-                <input type="checkbox" name="category" value="audio" tabindex="-1" id="audio-books-checkbox">
+                <input type="checkbox" name="category" value="audio" tabindex="-1" id="audio-books-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="audio-books-checkbox"></span>
               </label>
               <!-- Biography checkbox -->
               <label class="check-label" for="biography-checkbox">Biography
-                <input type="checkbox" name="category" value="bio" tabindex="-1" id="biography-checkbox">
+                <input type="checkbox" name="category" value="bio" tabindex="-1" id="biography-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="biography-checkbox"></span>
               </label>
               <!-- Children's checkbox -->
               <label class="check-label" for="childrens-checkbox">Children's
-                <input type="checkbox" name="category" value="childrens" tabindex="-1" id="childrens-checkbox">
+                <input type="checkbox" name="category" value="childrens" tabindex="-1" id="childrens-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="childrens-checkbox"></span>
               </label>
               <!-- DVDs checkbox -->
               <label class="check-label" for="dvds-checkbox">DVDs
-                <input type="checkbox" name="category" value="dvds" tabindex="-1" id="dvds-checkbox">
+                <input type="checkbox" name="category" value="dvds" tabindex="-1" id="dvds-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="dvds-checkbox"></span>
               </label>
               <!-- Fiction checkbox -->
               <label class="check-label" for="fiction-checkbox">Fiction
-                <input type="checkbox" name="category" value="fiction" tabindex="-1" id="fiction-checkbox">
+                <input type="checkbox" name="category" value="fiction" tabindex="-1" id="fiction-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="fiction-checkbox"></span>
               </label>
               <!-- Large Print checkbox -->
               <label class="check-label" for="large-print-checkbox">Large Print
-                <input type="checkbox" name="category" value="large-print" tabindex="-1" id="large-print-checkbox">
+                <input type="checkbox" name="category" value="large-print" tabindex="-1" id="large-print-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="large-print-checkbox"></span>
               </label>
               <!-- Nonfiction checkbox -->
               <label class="check-label" for="nonfiction-checkbox">Nonfiction
-                <input type="checkbox" name="category" value="nonfiction" tabindex="-1" id="nonfiction-checkbox">
+                <input type="checkbox" name="category" value="nonfiction" tabindex="-1" id="nonfiction-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="nonfiction-checkbox"></span>
               </label>
               <!-- Young Adult checkbox -->
               <label class="check-label" for="young-adult-checkbox">Young Adult
-                <input type="checkbox" name="category" value="young-adult" tabindex="-1" id="young-adult-checkbox">
+                <input type="checkbox" name="category" value="young-adult" tabindex="-1" id="young-adult-checkbox" autocomplete="off">
                 <span class="checkmark checkbox" tabindex="0" data-input-id="young-adult-checkbox"></span>
               </label>
             </fieldset>
@@ -103,27 +103,27 @@
               <legend>How would you rate your overall experience using your public library over the past year?</legend>
               <!-- Excellent radio button -->
               <label class="radio-label" for="excellent-radio">Excellent
-                <input type="radio" name="rating" value="5" tabindex="-1" id="excellent-radio" checked>
+                <input type="radio" name="rating" value="5" tabindex="-1" id="excellent-radio" autocomplete="off" checked>
                 <span class="checkmark radio" tabindex="0" data-input-id="excellent-radio"></span>
               </label>
               <!-- Very Good radio button -->
               <label class="radio-label" for="very-good-radio">Very Good
-                <input type="radio" name="rating" value="4" tabindex="-1" id="very-good-radio">
+                <input type="radio" name="rating" value="4" tabindex="-1" id="very-good-radio" autocomplete="off">
                 <span class="checkmark radio" tabindex="0" data-input-id="very-good-radio"></span>
               </label>
               <!-- Good radio button -->
               <label class="radio-label" for="good-radio">Good
-                <input type="radio" name="rating" value="3" tabindex="-1" id="good-radio">
+                <input type="radio" name="rating" value="3" tabindex="-1" id="good-radio" autocomplete="off">
                 <span class="checkmark radio" tabindex="0" data-input-id="good-radio"></span>
               </label>
               <!-- Okay radio button -->
               <label class="radio-label" for="okay-radio">Okay
-                <input type="radio" name="rating" value="2" tabindex="-1" id="okay-radio">
+                <input type="radio" name="rating" value="2" tabindex="-1" id="okay-radio" autocomplete="off">
                 <span class="checkmark radio" tabindex="0" data-input-id="okay-radio"></span>
               </label>
               <!-- Poor radio button -->
               <label class="radio-label" for="poor-radio">Poor
-                <input type="radio" name="rating" value="1" tabindex="-1" id="poor-radio">
+                <input type="radio" name="rating" value="1" tabindex="-1" id="poor-radio" autocomplete="off">
                 <span class="checkmark radio" tabindex="0" data-input-id="poor-radio"></span>
               </label>
             </fieldset>
@@ -131,7 +131,7 @@
            <!-- COMMENTS INPUT -->
            <div class="form-group">
             <label for="comments">Additional Comments:</label>
-            <textarea rows="12" id="comments"></textarea>
+            <textarea rows="12" id="comments" autocomplete="off"></textarea>
            </div>
            <!-- SUBMIT BUTTON -->
             <div class="button-group">
