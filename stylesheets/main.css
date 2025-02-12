@@ -1,7 +1,7 @@
 /* STYLES FOR PAGE'S MAIN CONTENT */
 
 .bg-image {
-  background-image: url(../images/bg-image.jpg);
+  background-image: url(../assets/images/bg-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +23,7 @@
 }
 
 .description {
+  font-family: "Lato Bold", Lato, sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -130,9 +131,9 @@ fieldset {
 }
 
 .select-wrapper:after {
-  content: "\f0dc";
+  content: "\f0d7";
   cursor: pointer;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   -ms-pointer-events: none;
   pointer-events: none;
