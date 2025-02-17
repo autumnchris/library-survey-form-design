@@ -107,6 +107,13 @@ fieldset {
   margin-bottom: 8px;
 }
 
+form .button-group .button[type=submit],
+form .button-group .button[type=submit]:hover,
+form .button-group .button[type=submit]:active,
+form .button-group .button[type=submit]:focus {
+  font-weight: 400;
+}
+
 /* Select element styles */
 .select-wrapper {
   background: #004988;
