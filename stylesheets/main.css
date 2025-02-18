@@ -50,13 +50,13 @@
   letter-spacing: 2px;
   line-height: normal;
   padding: 10px;
+  text-decoration: none;
   width: auto;
 }
 
 .button:hover {
   -webkit-box-shadow: 1px 1px 6px hsl(0, 0%, 60%);
   box-shadow: 1px 1px 6px hsl(0, 0%, 60%);
-  text-decoration: none;
 }
 
 /* Form styles */
