@@ -2,7 +2,7 @@
 
 An HTML and CSS design of a mock survey form.
 
-Inspired by the [Survey Form](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form) challenge as part of the curriculum for the [Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design) on [freeCodeCamp](https://www.freecodecamp.org).
+Inspired by the [Survey Form challenge](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form) as part of the curriculum for the [Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design) on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 
